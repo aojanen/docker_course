@@ -1,0 +1,5 @@
+docker run -it --name harjoitus ubuntu bash
+/# apt-get update
+/# apt-get install -y curl
+Detach with ctrl-p ctrl-q
+docker exec -it harjoitus sh -c 'while true; do echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website; done'
