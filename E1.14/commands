@@ -1,0 +1,4 @@
+docker build -t front .
+docker run -d -p 8686:8686 front serve -s -l 8686 build
+docker build -t back .
+docker run -d -p 8500:8500 back ./server
