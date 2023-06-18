@@ -1,0 +1,2 @@
+docker build -t backend .
+docker run -p 8686:8686 backend ./server
