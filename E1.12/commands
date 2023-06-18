@@ -1,0 +1,2 @@
+docker build .
+docker run -p 8686:8686 6a serve -s -l 8686 build
